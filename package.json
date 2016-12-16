@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "tslint src/nouislider.ts",
     "build": "typings install && npm run lint && ngc",
+    "ngc": "npm run lint && ngc",
     "start": "npm run build && webpack-dev-server --host 0.0.0.0",
     "deploy": "NODE_ENV=prod npm run build && NODE_ENV=prod webpack && gh-pages -d demo",
     "test": "NODE_ENV=test karma start",
@@ -60,7 +61,7 @@
     "ts-loader": "0.8.2",
     "tslint": "3.9.0",
     "tslint-loader": "2.1.4",
-    "typescript": "2.0.2",
+    "typescript": "2.1.4",
     "webpack": "1.12.14",
     "webpack-dev-server": "1.14.1",
     "zone.js": "0.6.21"
